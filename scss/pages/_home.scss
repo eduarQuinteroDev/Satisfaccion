@@ -11,8 +11,9 @@ body {
         border-radius: 10px;
         width: 250px;
         background-color: #202630;
+        padding: 15px;
         .main__texto {
-            border: 1px solid green;
+            // border: 1px solid green;
             display: flex;
             flex-direction: column;
             .fa-star {
@@ -27,6 +28,27 @@ body {
                 align-items: center;
                 border-radius: 50%;
             }
+            .main__titulo {
+                // border: 1px solid red;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+            }
+            .main__contenido {
+                color: white;
+                padding: 5px 0;
+            }
+        }
+
+
+        .main__puntuaciones {
+            border: 1px solid yellow;
+
+
+            .main__punto {
+                border: 1px solid white;
+            }
+            
         }
     }
 }

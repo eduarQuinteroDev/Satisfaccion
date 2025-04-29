@@ -1,7 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 12px;
 }
 
 body {
@@ -16,9 +29,9 @@ body .main {
   border-radius: 10px;
   width: 250px;
   background-color: #202630;
+  padding: 15px;
 }
 body .main .main__texto {
-  border: 1px solid green;
   display: flex;
   flex-direction: column;
 }
@@ -32,6 +45,21 @@ body .main .main__texto .fa-star {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+body .main .main__texto .main__titulo {
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+body .main .main__texto .main__contenido {
+  color: white;
+  padding: 5px 0;
+}
+body .main .main__puntuaciones {
+  border: 1px solid yellow;
+}
+body .main .main__puntuaciones .main__punto {
+  border: 1px solid white;
 }
 
 /*# sourceMappingURL=main.css.map */
