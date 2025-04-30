@@ -11,6 +11,13 @@ h1 {
   font-size: 25px;
 }
 
+h2 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+}
+
 p {
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
@@ -21,21 +28,22 @@ p {
 body {
   background-color: #141518;
 }
-body .main {
+body .main .container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 10px;
+  height: 350px;
   width: 250px;
   background-color: #202630;
   padding: 15px;
 }
-body .main .main__texto {
+body .main .container .container__texto {
   display: flex;
   flex-direction: column;
 }
-body .main .main__texto .fa-star {
+body .main .container .container__texto .fa-star {
   color: #fc7613;
   background-color: #282e38;
   width: 35px;
@@ -46,20 +54,20 @@ body .main .main__texto .fa-star {
   align-items: center;
   border-radius: 50%;
 }
-body .main .main__texto .main__titulo {
+body .main .container .container__texto .container__titulo {
   color: white;
   text-align: center;
   padding: 10px 0;
 }
-body .main .main__texto .main__contenido {
+body .main .container .container__texto .container__contenido {
   padding: 10px 0;
 }
-body .main .main__puntuaciones {
+body .main .container .container__puntuaciones {
   display: flex;
   justify-content: space-between;
   padding: 15px 0;
 }
-body .main .main__puntuaciones .main__punto {
+body .main .container .container__puntuaciones .container__punto {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -70,14 +78,14 @@ body .main .main__puntuaciones .main__punto {
   cursor: pointer;
   transition: background-color 0.3s linear;
 }
-body .main .main__puntuaciones .main__punto:hover {
+body .main .container .container__puntuaciones .container__punto:hover {
   background-color: white;
 }
-body .main .main__puntuaciones .main__punto:hover p {
+body .main .container .container__puntuaciones .container__punto:hover p {
   color: black;
   font-weight: 400;
 }
-body .main .main__boton {
+body .main .container .container__boton {
   height: 40px;
   border-radius: 50px;
   display: flex;
@@ -87,13 +95,56 @@ body .main .main__boton {
   cursor: pointer;
   transition: background-color 0.3s linear;
 }
-body .main .main__boton p {
+body .main .container .container__boton p {
   font-size: 15px;
   color: black;
   font-weight: 500;
 }
-body .main .main__boton:hover {
+body .main .container .container__boton:hover {
   background-color: white;
+}
+body .main .container2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  width: 250px;
+  height: 350px;
+  background-color: #202630;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+body .main .container2 .container2__img {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+body .main .container2 .container2__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+body .main .container2 .container2__seleccion {
+  background-color: #282e38;
+  color: #fc7613;
+  font-weight: 400;
+  border-radius: 50px;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+body .main .container2 .container2__mensaje .container2__titulo {
+  text-align: center;
+}
+body .main .container2 .container2__mensaje .container2__mensaje-gracias {
+  text-align: center;
+  padding: 10px 0;
+}
+body .main .oculto {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */
