@@ -51,13 +51,13 @@ body {
     
                 .container__punto {
                     // border: 1px solid white;
+                    background-color: #282e38;
                     width: 30px;
                     height: 30px;
                     border-radius: 50%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background-color: #282e38;
                     cursor: pointer;
                     transition: background-color 0.3s linear;
                     &:hover {
@@ -68,6 +68,11 @@ body {
                         }
                     }
                 }
+                .seleccion {
+                    background-color: #fc7613;
+                    color: black;
+                }
+                
                 
             }
     
@@ -150,7 +155,6 @@ body {
         .oculto {
             display: none;
         }
-
 
 
 

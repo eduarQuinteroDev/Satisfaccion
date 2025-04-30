@@ -4,12 +4,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://kit.fontawesome.com/4d9e27f186.js" crossorigin="anonymous"></script>
-        <title>Rating</title>
+        <title>Encuesta</title>
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <main class="main">
-            <div class="container">
+            <div class="container" id="container-principal">
                 <div class="container__texto">
                     <i class="fa-solid fa-star"></i>
                     <h1 class="container__titulo">Satisfacción de cliente</h1>
@@ -18,21 +18,21 @@
                     </p>
                 </div>
                 <div class="container__puntuaciones">
-                    <div class="container__punto uno"><p>1</p></div>
-                    <div class="container__punto dos"><p>2</p></div>
-                    <div class="container__punto tres"><p>3</p></div>
-                    <div class="container__punto cuatro"><p>4</p></div>
-                    <div class="container__punto cinco"><p>5</p></div>
+                    <div class="container__punto" id="uno"><p>1</p></div>
+                    <div class="container__punto" id="dos"><p>2</p></div>
+                    <div class="container__punto" id="tres"><p>3</p></div>
+                    <div class="container__punto" id="cuatro"><p>4</p></div>
+                    <div class="container__punto" id="cinco"><p>5</p></div>
                 </div>
-                <div class="container__boton">
+                <div class="container__boton" id="enviar">
                     <p>Enviar</p>
                 </div>
             </div>
-            <div class="container2 oculto">
+            <div class="container2 oculto" id="container-secundario">
                 <div class="container2__img">
                     <img src="img/illustration-thank-you.svg" alt="imagen de gracias">
                 </div>
-                <p class="container2__seleccion">Seleccionaste 4 de 5</p>
+                <p class="container2__seleccion">Seleccionaste <span id="container2__puntuacion"></span> de 5</p>
                 <div class="container2__mensaje">
                     <h2 class="container2__titulo">Gracias!</h2>
                     <p class="container2__mensaje-gracias">
@@ -41,5 +41,6 @@
                 </div>
             </div>
         </main>
+        <script src="js/main.js"></script>
     </body>
 </html>
