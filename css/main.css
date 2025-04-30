@@ -80,8 +80,6 @@ body .main .container .container__puntuaciones .container__punto {
 }
 body .main .container .container__puntuaciones .container__punto:hover {
   background-color: white;
-}
-body .main .container .container__puntuaciones .container__punto:hover p {
   color: black;
   font-weight: 400;
 }

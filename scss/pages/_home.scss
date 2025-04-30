@@ -62,10 +62,8 @@ body {
                     transition: background-color 0.3s linear;
                     &:hover {
                         background-color: white;
-                        p {
-                            color: black;
-                            font-weight: 400;
-                        }
+                        color: black;
+                        font-weight: 400;                        
                     }
                 }
                 .seleccion {
